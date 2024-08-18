@@ -4,41 +4,53 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: #f4f1ea;
 }
 
-header{
+header {
     height: 90px;
     width: 100%;
-    background-color: #acacac;
+    background-color: #c9744f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
+header div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 
-nav ul{
+header img {
+    height: 100%;
+    max-height: 100%;
+}
+
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    display: flex;
 }
 
-nav li{
-    float: left;
+nav li {
     font-weight: bold;
 }
 
 nav li a {
     display: block;
-    color: black;
+    color: #f4f1ea;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0 16px;
     text-decoration: none;
+    line-height: 90px;
 }
 
-nav li a:hover, nav .active{
-    background-color: rgb(100, 100, 100);
-}
-
-li a>svg{
-    width: 25px;
+nav li a:hover, nav .active {
+    background-color: #5c3d2e;
 }
 
 main{
@@ -47,9 +59,13 @@ main{
 }
 
 footer{
-    background-color: #acacac;
+    background-color: #c9744f;
     text-align: justify;
     width: 100%;
+}
+
+footer, footer a{
+    color: #f4f1ea;
 }
 
 .container-footer{
@@ -76,7 +92,6 @@ footer{
 
 .MapaSite ul li a{
     text-decoration: none;
-    color: black;
 }
 
 .MapaSite ul li a:hover,.MapaSite .active{

@@ -5,20 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="icon" href="../img/icon.png">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="../html/SobreNos.html">Sobre nós</a></li>
-            <li class="active"><a href="../html/contato.html">Contato</a></li>
-            <li><a href="../html/cadastro.html">Cadastro</a></li>
-            <li><a href="../html/pedidos.html">Pedidos</a></li>
-        </ul>
-    </nav>
+    <header>
+        <div>
+            <img src="../img/icone.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../html/SobreNos.html">Sobre nós</a></li>
+                <li class="active"><a href="../html/contato.html">Contato</a></li>
+                <li><a href="../html/cadastro.html">Cadastro</a></li>
+                <li><a href="../html/pedidos.html">Pedidos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div id="formulario">
+            <h1>Contate-nos</h1>
+            <form class="form" action="#" method="post">
+                
+                <div class="grupo_form">
+                    <label for="nome" class="form_label">Nome</label>
+                    <input type="text" name="nome" class="form_input" id="nome" placeholder="Nome" required>
+                </div>
+                
+                <div class="grupo_form">
+                    <label for="e-mail" class="form_label">Email</label>
+                    <input type="email" name="email" class="form_input" id="email" placeholder="seuemail@email.com" required>
+                </div>
+                
+                <div class="form_messagem">
+                    <label for="message" class="form_message_label"> Digite aqui sua sua mensagem:</label>
+                    <textarea name="mensagem" id="message" cols="30" rows="3" class="form_input message_input" required></textarea>
+                </div>
+              
+                <div class="grupo_form">
+                    <div class="enviar">
+                      <input type="hidden" name="acao" value="enviar">
+                      <button type="submit" name="Submit" class="btnEnviar" >Enviar</button>
+                    </div>
+                </div>
+            </form>
+    </div>
+    </main>
 
     <footer>
-        <div class="container">
+        <div class="container-footer">
             <div class="contato">
                 <h3>Contato</h3>
                 <p>E-mail: 22403019@aluno.cotemig.com.br</p>

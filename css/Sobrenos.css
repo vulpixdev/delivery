@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    color: #5c3d2e;
+}
+
+.imagem img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}

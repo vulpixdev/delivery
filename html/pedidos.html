@@ -5,20 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedidos</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pedidos.css">
+    <link rel="icon" href="../img/icon.png">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="../html/SobreNos.html">Sobre nós</a></li>
-            <li><a href="../html/contato.html">Contato</a></li>
-            <li><a href="../html/cadastro.html">Cadastro</a></li>
-            <li class="active"><a href="../html/pedidos.html">Pedidos</a></li>
-        </ul>
-    </nav>
+    <header>
+        <div>
+            <img src="../img/icone.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../html/SobreNos.html">Sobre nós</a></li>
+                <li><a href="../html/contato.html">Contato</a></li>
+                <li><a href="../html/cadastro.html">Cadastro</a></li>
+                <li class="active"><a href="../html/pedidos.html">Pedidos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Meus Pedidos</h1>
+            <div class="grid grid-header">
+                <div>Produto</div>
+                <div>Preço</div>
+                <div>Quantidade</div>
+                <div>Total</div>
+            </div>
+            
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="../img/espresso.png" alt="Expresso">
+                    <div class="item-details">
+                        <div class="item-name">Café Expresso</div>
+                        <div class="item-cafeteria">Sabrina's Coffe</div>
+                    </div>
+                </div>
+                
+                <div class="item-price">R$ 10,00</div>
+                <div class="item-quantity">1</div>
+                <div class="item-total">R$ 10,00</div>
+            </div>
+            
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="../img/cappuccino.png" alt="Cappuccino">
+                    <div class="item-details">
+                        <div class="item-name">Cappuccino</div>
+                        <div class="item-cafeteria">Cafeteria Belo Dia</div>
+                    </div>
+                </div>
+                
+                <div class="item-price">R$ 15,00</div>
+                <div class="item-quantity">2</div>
+                <div class="item-total">R$ 30,00</div>
+            </div>
+
+            <div class="total-container">Total: R$ 40,00</div>
+            <button class="checkout-btn">Finalizar Pedido</button>
+        </div>
+    </main>
 
     <footer>
-        <div class="container">
+        <div class="container-footer">
             <div class="contato">
                 <h3>Contato</h3>
                 <p>E-mail: 22403019@aluno.cotemig.com.br</p>
